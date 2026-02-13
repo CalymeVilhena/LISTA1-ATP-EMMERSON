@@ -1,0 +1,26 @@
+#include <stdio.h>
+    int main(){
+        int codigo;
+
+        printf(" \n 1.Escrituario\n 2.Secretario\n 3.Caixa\n 4.Gerente\n 5.diretor \n digite seu codigo:\n");
+        scanf("%d",&codigo);
+
+        switch(codigo){
+            case 1:
+                printf("50%% de aumento");
+                break;
+            case 2:
+                printf("35%% de aumento");
+                break;
+            case 3:
+                printf("20%% de aumento");
+                break;
+            case 4:
+                printf("10%% de aumento");
+                break;
+            case 5:
+                printf("Sem aumento seu safado");
+                break;
+        }
+        return 0;
+    }
