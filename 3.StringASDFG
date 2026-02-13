@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char senha[6];
+    char senhaCorreta[6] = "asdfg";
+
+    printf("Digite a senha:\n");
+    scanf("%5s", senha);  // Limita a 5 caracteres + '\0'
+
+    if (strcmp(senha, senhaCorreta) == 0) {
+        printf("ACESSO PERMITIDO");
+    } else {
+        printf("ACESSO NEGADO");
+    }
+
+    return 0;
+}
