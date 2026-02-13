@@ -1,0 +1,42 @@
+#include <stdio.h>
+    int main(){
+        int idade;
+
+        printf("Idade: \n");
+        scanf("%d",&idade);
+
+        switch(idade){
+            case 0:
+            case 1:
+            case 2:
+                printf("Recem nascido \n");
+                break;
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10:
+            case 11:
+                printf("Crianca");
+                break;
+            case 12:
+            case 13:
+            case 14:
+            case 15:
+            case 16:
+            case 17:
+            case 18:
+            case 19:
+                printf("adolescente");
+                break;
+        }
+        if(idade >=20 && idade <=55){
+            printf("adulto");
+        }else{
+            printf("idoso");
+        }
+        return 0;
+    }
