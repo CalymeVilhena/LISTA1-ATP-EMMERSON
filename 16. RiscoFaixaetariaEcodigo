@@ -1,0 +1,58 @@
+#include <stdio.h>
+    int main(){
+        int idade;
+        char risco;
+
+        printf("Digite sua idade: \n");
+        scanf("%d",&idade);
+
+        if(idade>=18 && idade <71){
+                printf("b.baixo\n m.medio\n a.alto\n");
+                scanf(" %c",&risco);
+
+            if(idade>=18 && idade<=24){
+
+                switch(risco){
+                    case 'b':
+                        printf("codigo 7");
+                        break;
+                    case 'm':
+                        printf("codigo 8");
+                        break;
+                    case 'a':
+                        printf("codigo 9");
+                        break;
+                }
+            }else if(idade>=25 && idade<=40){
+
+                switch(risco){
+                    case 'b':
+                        printf("codigo 4");
+                        break;
+                    case 'm':
+                        printf("codigo 5");
+                        break;
+                    case 'a':
+                        printf("codigo 6");
+                        break;
+                }
+            }else if(idade>=41 && idade<=71){
+
+                switch(risco){
+                    case 'b':
+                        printf("codigo 1");
+                        break;
+                    case 'm':
+                        printf("codigo 2");
+                        break;
+                    case 'a':
+                        printf("codigo 3");
+                        break;
+                }
+            }
+
+        }else{
+            printf("nao recebe apolice");
+
+        }
+    }
